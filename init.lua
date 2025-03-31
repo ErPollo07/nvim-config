@@ -23,11 +23,28 @@ vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 vim.keymap.set("n", "<C-b>", ":Neotree filesystem reveal left<CR>", {})
 
 -- Tree-sitter settings
-local config = require("nvim-treesitter.configs")
-config.setup({
-  ensure_installed = { "c", "lua", "javascript" },
-  highlight = { enable = false },
-  indent = { enable = true },
-})
+require("lazy").setup({{
+  "nvim-treesitter/nvim-treesitter",
+  build = ":TSUpdate",
+  config = function () 
+    local configs = require("nvim-treesitter.configs")
+
+    configs.setup({
+      ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "html" },
+      sync_install = false,
+      highlight = { enable = true },
+      indent = { enable = true },  
+    })
+  end
+}})
+
+-------------------
+-- CUSTOM MACROS --
+-------------------
+
+local esc = vim.api.nvim_replace_termcodes("<Esc>", true, true, true)
+
+vim.fn.setreg("c", "i-- ")
+
 
 print("Hello from lua")
