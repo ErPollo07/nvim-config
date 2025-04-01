@@ -9,6 +9,11 @@ return {
     },
     lazy = false,
     opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+        },
+      },
       window = {
         mappings = {
           ["l"] = "move_up",
