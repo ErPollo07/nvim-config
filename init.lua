@@ -17,8 +17,9 @@ vim.cmd.colorscheme "catppuccin"
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
 
--- Neo-tree keymap
+-- Neotree keymap
 vim.keymap.set("n", "<C-b>", ":Neotree filesystem reveal left<CR>", {})
+vim.keymap.set("n", "<C-h>", ":Neotree filesystem close left<CR>", {})
 
 -------------------
 -- CUSTOM MACROS --

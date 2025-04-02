@@ -20,6 +20,6 @@ return {
           ["k"] = "move_down",
         }
       }
-    } 
+    }
   }
 }
