@@ -9,7 +9,8 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "clangd" }
+        ensure_installed = { "lua_ls", "clang", "harper_ls" }
+        -- Supported languages: Markdown, Rust, TypeScript, JavaScript, Python, Go, C, C++, Ruby, C#, TOML, Lua, Java
       })
     end
   },
@@ -18,7 +19,7 @@ return {
     config = function()
       local lspconfig = require("lspconfig")
       lspconfig.lua_ls.setup({})
-      lspconfig.clangd.setup({})
+      lspconfig.ast_grep.setup({})
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
       vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
