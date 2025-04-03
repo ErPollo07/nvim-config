@@ -22,3 +22,13 @@ vim.keymap.set('n', '<c-k>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd h<CR>')
 vim.keymap.set('n', '<c-;>', ':wincmd l<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd k<CR>')
+
+-- Telescope keymap
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<C-p>", builtin.find_files, {})
+
+-- Neotree keymap
+vim.keymap.set("n", "<C-b>", ":Neotree filesystem reveal left<CR>", {})
+vim.keymap.set("n", "<C-h>", ":Neotree filesystem close left<CR>", {})
+
+
