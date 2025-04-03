@@ -1,4 +1,4 @@
-require("my")
+require("config.remap")
 require("config.lazy")
 
 

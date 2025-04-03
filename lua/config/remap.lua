@@ -1,6 +1,8 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("n", "<leader>E", vim.cmd.Ex)
+-- If noetree doesn't work use this shortcut
+-- vim.keymap.set("n", "<leader>E", vim.cmd.Ex)
+
 vim.keymap.set("n", "<leader>L", vim.cmd.Lazy)
 vim.keymap.set("n", "<leader>Q", vim.cmd.q)
 
