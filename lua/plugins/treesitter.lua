@@ -6,8 +6,11 @@ return {
 
     configs.setup({
       auto_install = true,
-      highlight = { enable = false },
+      highlight = {
+        enable = true,
+        disable = { "c" },
+      },
       indent = { enable = true },
     })
-  end
+  end,
 }

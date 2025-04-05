@@ -11,3 +11,6 @@ vim.wo.relativenumber = true
 -- Set the color scheme
 vim.cmd.colorscheme "catppuccin"
 
+-- Use the system clipboard
+vim.opt.clipboard = "unnamedplus"
+
