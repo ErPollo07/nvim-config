@@ -6,7 +6,6 @@ return {
 
     configs.setup({
       auto_install = true,
-      sync_install = false,
       highlight = { enable = false },
       indent = { enable = true },
     })
