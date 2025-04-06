@@ -28,7 +28,7 @@ return {
       })
 
       -- Config JDTLS
-      local home = os.getenv("HOME")
+      local home = os.getenv("HOME") or os.getenv("USERPROFILE")
       local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
       local workspace_dir = home .. "/.local/share/eclipse/" .. project_name
       lspconfig.jdtls.setup({
