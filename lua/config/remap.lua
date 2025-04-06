@@ -18,10 +18,10 @@ vim.keymap.set("v", "l", "k")
 vim.keymap.set("v", ";", "l")
 
 -- Navigation throught nvim panes
-vim.keymap.set('n', '<c-k>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-j>', ':wincmd h<CR>')
-vim.keymap.set('n', '<c-;>', ':wincmd l<CR>')
+vim.keymap.set('n', '<c-k>', ':wincmd j<CR>')
 vim.keymap.set('n', '<c-l>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-;>', ':wincmd l<CR>')
 
 -- Telescope keymap
 local builtin = require("telescope.builtin")

@@ -6,7 +6,10 @@ require("config.lazy")
 require("config.remap")
 
 -- Option (colorscheme, general / plugin keymaps)
-require("config.vim-options")
+require("config.options")
+
+-- Load my custom commands
+require("config.commands")
 
 -- Macros
 require("config.macros")

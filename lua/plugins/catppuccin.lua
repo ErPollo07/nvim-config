@@ -1,16 +1,20 @@
 return {
-  "catppuccin/nvim", 
-  name = "catppuccin", 
-  priority = 1000, 
+  "catppuccin/nvim",
+  name = "catppuccin",
+  priority = 1000,
   config = function()
-    vim.cmd.colorscheme "catppuccin"
-
     require("catppuccin").setup({
       flavor = "mocha",
-      no_italic = true,
       integrations = {
         treesitter = true
+      },
+      styles = {
+        comments = {}, -- Tell catppuccin that in I don't want any effect put "italic" to change the comment to italic
+        conditionals = {},
+        loops = {},
       }
     })
-  end
+
+    vim.cmd.colorscheme "catppuccin"
+  end,
 };
