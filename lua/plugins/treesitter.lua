@@ -5,7 +5,7 @@ return {
     local configs = require("nvim-treesitter.configs")
 
     configs.setup({
-      auto_install = true,
+      auto_install = true, -- Automatically install missing parsers when entering buffer
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false, -- For Catppuccin

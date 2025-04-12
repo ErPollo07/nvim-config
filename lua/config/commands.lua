@@ -8,7 +8,7 @@ vim.api.nvim_create_user_command(
 
 -- Open the configuration folder
 vim.api.nvim_create_user_command(
-  "OpenConfig",
+  "openConfig",
   function()
     local terminal_cmd = "start cmd /k nvim ~/appdata/local/nvim/" -- for Windows
     -- local terminal_cmd = "gnome-terminal -- nvim ~/.config/nvim/" -- for Linux
@@ -22,7 +22,7 @@ vim.api.nvim_create_user_command(
 -- Start the strart script of the project
 -- For electron projects
 vim.api.nvim_create_user_command(
-  "NpmRunStart",
+  "npmRunStart",
   function()
     local term_cmd = "start cmd /k npm run start"
 
