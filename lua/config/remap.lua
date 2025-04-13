@@ -24,6 +24,9 @@ vim.keymap.set("n", "<leader>k", "<C-w>k", opts)
 vim.keymap.set("n", "<leader>l", "<C-w>l", opts)
 vim.keymap.set("n", "<leader>;", "<C-w>h", opts)
 
+-- Disable active highlight
+vim.keymap.set("n", "<leader>hl", ":nohlsearch<CR>", opts)
+
 -- Telescope keymap
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<C-p>", builtin.find_files, {})
