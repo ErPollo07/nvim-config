@@ -9,7 +9,7 @@ return {
     "williamboman/mason-lspconfig.nvim",
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "clangd", "jdtls", "biome" },
+        ensure_installed = { "lua_ls", "clangd", "jdtls", "eslint" },
       })
     end,
   },
@@ -27,7 +27,7 @@ return {
         capabilities = cap,
       })
 
-      lspconfig.biome.setup({
+      lspconfig.eslint.setup({
         capabilities = cap,
       })
 

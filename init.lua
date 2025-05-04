@@ -1,16 +1,13 @@
 
--- Lazy
-require("config.lazy")
+-- Option (colorscheme, general / plugin keymaps)
+require("config.options")
 
 -- keymap
 require("config.remap")
 
--- Option (colorscheme, general / plugin keymaps)
-require("config.options")
+-- Lazy
+require("config.lazy")
 
 -- Load my custom commands
 require("config.commands")
-
--- Macros
-require("config.macros")
 
